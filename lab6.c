@@ -44,7 +44,7 @@ void insert_sorted(uint64_t data) {
     bool inserted = false;
     while (curr != NULL && !inserted) {
       if (data < curr->data) {
-        if (prev == NULL) {
+        if (prev == NULL) { // solution
           head = new_node;
         } else {
           prev->next = new_node;
@@ -55,7 +55,7 @@ void insert_sorted(uint64_t data) {
       prev = curr;
       curr = curr->next;
     }
-    if (!inserted) {
+    if (!inserted) { // solution
       prev->next = new_node;
     }
   }
