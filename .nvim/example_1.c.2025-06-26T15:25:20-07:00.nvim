@@ -53,7 +53,7 @@ void insert_sorted(uint64_t data) {
       prev = curr;
       curr = curr->next;
     }
-    if (!inserted) { // solution
+    if (!inserted) { //solution
       prev->next = new_node;
     }
   }
